@@ -95,6 +95,7 @@ body {
 
 }
 
+
 h3 {
     font-size: 2rem;
     margin: 20px 0;
@@ -112,10 +113,12 @@ p {
 
 
 /* For tablets and small laptops (width <= 768px) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
 
    #container {
     border: none;
+    border-radius: 0;
+    padding: 20px 0px;
    }
 
    #containerInstructions {
@@ -126,8 +129,8 @@ p {
     background-color: rgb(94, 94, 94);
     border-radius: 20px;
     margin: 80px;
-    padding: 20px 40px;
-    min-width: 500px;
+    padding: 20px 0px;
+    max-width: 200px;
     margin: 10px 0;
     margin-bottom: 50px;
    }
@@ -141,8 +144,12 @@ p {
     }
 
     #controls button{
-        margin-bottom: 100px;
-        
+        margin-bottom: 100px;   
+    }
+
+    #display {
+        font-size: 4rem;
+        margin: 25px;
     }
 
     h3 {
