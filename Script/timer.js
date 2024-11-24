@@ -124,6 +124,8 @@ startBtn.onclick = function() {
     step1.textContent = "Pre Timer";
     step2.textContent = "Pour 50g of water";
     startCountdown(countdownDuration1, proceedToNextStep);
+    step1.style.color = "#00aa00";
+    step2.style.color = "orange";
     currentStep = 1;
     paused = false; // Reset pause state when starting
 };
@@ -140,6 +142,7 @@ resetBtn.onclick = function () {
     display.textContent = "45"; // Reset the display to the initial time
     step1.textContent = "Start the timer!"; // Reset the instructions
     step2.textContent = "Pour 50g of water to bloom";
+    step1.style.color = "white";
     currentStep = 1; // Reset to step 1
     paused = false; // Reset pause state
 };
