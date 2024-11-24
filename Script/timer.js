@@ -69,32 +69,32 @@ function proceedToNextStep() {
         step1.textContent = "Pour up to 100g total";
         step2.textContent = "Pause";
         startCountdown(countdownDuration3, proceedToNextStep); // Last step, no next step callback
-        currentStep = 3;
+        currentStep = 4;
     } else if (currentStep === 4) {
         step1.textContent = "Pause";
         step2.textContent = "Pour up to 150g total";
         startCountdown(countdownDuration4, proceedToNextStep); // Last step, no next step callback
-        currentStep = 4;
+        currentStep = 5;
     } else if (currentStep === 5) {
         step1.textContent = "Pour up to 150g total";
         step2.textContent = "Pause";
         startCountdown(countdownDuration5, proceedToNextStep); // Last step, no next step callback
-        currentStep = 5;
+        currentStep = 6;
     } else if (currentStep === 6) {
         step1.textContent = "Pause";
         step2.textContent = "Pour up to 200g total";
         startCountdown(countdownDuration6, proceedToNextStep); // Last step, no next step callback
-        currentStep = 6;
+        currentStep = 7;
     } else if (currentStep === 7) {
         step1.textContent = "Pour up to 200g total";
         step2.textContent = "Pause";
         startCountdown(countdownDuration7, proceedToNextStep); // Last step, no next step callback
-        currentStep = 7;
+        currentStep = 8;
     } else if (currentStep === 8) {
         step1.textContent = "Pause";
         step2.textContent = "Pour up to 250g total";
         startCountdown(countdownDuration8, proceedToNextStep); // Last step, no next step callback
-        currentStep = 8;
+        currentStep = 9;
     } else if (currentStep === 9) {
         step1.textContent = "Pour up to 250g total";
         step2.textContent = "Gently swirl";
