@@ -39,6 +39,7 @@ body {
     font-weight: bold;
     text-shadow: 2px 2px 2px hsla(0%, 0%, 0%, 0.75);
     margin: 25px;
+    margin-bottom: 0px;
 }
 
 /* Controls */
@@ -88,6 +89,7 @@ body {
     background-color: rgb(68, 68, 68);
     border-radius: 20px;
     margin: 80px;
+    margin-top: 40px;
     padding: 20px 40px;
     min-width: 400px;
 }
@@ -103,25 +105,31 @@ p {
     margin: 20px 0;
 }
 
+#step2 {
+    font-size: 1.5rem;
+}
+
+
 /* Responsive Styles for Tablets and Small Laptops (width <= 900px) */
 @media screen and (max-width: 900px) {
 
     #container {
         border: none;
         padding: 20px 0;
+        padding-bottom: 80px;
         min-width: 500px;
     }
 
     #containerInstructions {
-        margin: 80px;
+        margin top: 80px;
         padding: 20px 0;
-        margin-bottom: 50px;
         min-width: 365px;
     }
 
     #display {
         font-size: 4rem;
         margin: 25px;
+        margin-bottom: 0px;
     }
 
     #controls button {
@@ -155,4 +163,9 @@ p {
         margin: 10px 0;
         margin-bottom: 20px;
     }
+
+    #step2 {
+        font-size: 1.2rem;
+    }
 }
+
