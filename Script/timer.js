@@ -78,6 +78,7 @@ startBtn.onclick = function() {
     startBtn.textContent = "Stop";
     startBtn.style.backgroundColor = "red";
     
+    
 
     startCountdown(countdownDuration1, proceedToNextStep);
     currentStep = 1;
@@ -157,7 +158,7 @@ function proceedToNextStep() {
 
         // change the look and position of instructions
          containerInstructions.style.transition = "transform 0.7s ease";
-         containerInstructions.style.transform = "translateY(-141px)";
+         containerInstructions.style.transform = "translateY(-142px)";
         
        //Step 3
        step3.style.fontSize = "0.4rem";
@@ -181,7 +182,7 @@ function proceedToNextStep() {
 
         // change the look and position of instructions
         containerInstructions.style.transition = "transform 0.7s ease";
-        containerInstructions.style.transform = "translateY(-172px)";
+        containerInstructions.style.transform = "translateY(-174px)";
        
         //Step 4
         step4.style.fontSize = "0.4rem";
@@ -203,7 +204,7 @@ function proceedToNextStep() {
 
             // change the look and position of instructions
             containerInstructions.style.transition = "transform 0.7s ease";
-            containerInstructions.style.transform = "translateY(-203px)";
+            containerInstructions.style.transform = "translateY(-206px)";
            
             //Step 5
             step5.style.fontSize = "0.4rem";
@@ -224,7 +225,7 @@ function proceedToNextStep() {
 
             // change the look and position of instructions
             containerInstructions.style.transition = "transform 0.7s ease";
-            containerInstructions.style.transform = "translateY(-234px)";
+            containerInstructions.style.transform = "translateY(-238px)";
             //Step 6
             step6.style.fontSize = "0.4rem";
             step6.style.opacity = "0";
@@ -244,7 +245,7 @@ function proceedToNextStep() {
 
             // change the look and position of instructions
             containerInstructions.style.transition = "transform 0.7s ease";
-            containerInstructions.style.transform = "translateY(-265px)";
+            containerInstructions.style.transform = "translateY(-270px)";
            
             //Step 7
             step7.style.fontSize = "0.4rem";
@@ -265,7 +266,7 @@ function proceedToNextStep() {
 
             // change the look and position of instructions
             containerInstructions.style.transition = "transform 0.7s ease";
-            containerInstructions.style.transform = "translateY(-296px)";
+            containerInstructions.style.transform = "translateY(-302px)";
            
             //Step 8
             step8.style.fontSize = "0.4rem";
@@ -286,7 +287,7 @@ function proceedToNextStep() {
 
             // change the look and position of instructions
             containerInstructions.style.transition = "transform 0.7s ease";
-            containerInstructions.style.transform = "translateY(-328px)";
+            containerInstructions.style.transform = "translateY(-334px)";
            
             //Step 9
             step9.style.fontSize = "0.4rem";
@@ -307,7 +308,7 @@ function proceedToNextStep() {
 
             // change the look and position of instructions
             containerInstructions.style.transition = "transform 0.7s ease";
-            containerInstructions.style.transform = "translateY(-360px)";
+            containerInstructions.style.transform = "translateY(-366px)";
            
             //Step 10
             step10.style.fontSize = "0.4rem";
@@ -328,7 +329,7 @@ function proceedToNextStep() {
 
             // change the look and position of instructions
             containerInstructions.style.transition = "transform 0.7s ease";
-            containerInstructions.style.transform = "translateY(-390px)";
+            containerInstructions.style.transform = "translateY(-398px)";
            
             //Step 11
             step11.style.fontSize = "0.4rem";
