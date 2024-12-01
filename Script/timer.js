@@ -1,15 +1,17 @@
-let countdownDuration1 = 3900;
+let countdownDuration1 = 3400;
 let countdownDuration2 = 9900;
 let countdownDuration3 = 34900;
 let countdownDuration4 = 9900;
-let countdownDuration5 = 9900;
+let countdownDuration5 = 14900;
 let countdownDuration6 = 9900;
 let countdownDuration7 = 9900;
 let countdownDuration8 = 9900;
 let countdownDuration9 = 9900;
-let countdownDuration10 = 4900;
-let countdownDuration11 = 54900;
-let countdownDuration12 = 9900;
+let countdownDuration10 = 9900;
+let countdownDuration11 = 4900;
+let countdownDuration12 = 54900;
+let countdownDuration13 = 9900;
+
 
 let timerInterval; // Declare timerInterval in a wider scope
 let paused = false; // Track if the timer is paused
@@ -73,6 +75,9 @@ function startCountdown(duration, nextStepCallback) {
 
 // Attach the click event to start the countdown
 startBtn.onclick = function() {
+    
+
+    
     clearInterval(timerInterval);
     display.style.opacity = "1";
     startBtn.textContent = "Stop";
@@ -150,7 +155,7 @@ function proceedToNextStep() {
         step5.style.opacity = ".5";
 
 
-        startCountdown(countdownDuration3, proceedToNextStep); // Last step, no next step callback
+        startCountdown(countdownDuration4, proceedToNextStep); // Last step, no next step callback
         currentStep = 4;
 
 
@@ -174,7 +179,7 @@ function proceedToNextStep() {
        step6.style.opacity = ".5"; 
 
 
-        startCountdown(countdownDuration4, proceedToNextStep); // Last step, no next step callback
+        startCountdown(countdownDuration5, proceedToNextStep); // Last step, no next step callback
         currentStep = 5;
         
 
@@ -198,7 +203,7 @@ function proceedToNextStep() {
         step7.style.opacity = ".5"; 
 
 
-        startCountdown(countdownDuration5, proceedToNextStep); // Last step, no next step callback
+        startCountdown(countdownDuration6, proceedToNextStep); // Last step, no next step callback
         currentStep = 6;
     } else if (currentStep === 6) {
 
@@ -219,7 +224,7 @@ function proceedToNextStep() {
             step8.style.fontSize = "1.2rem";
             step8.style.opacity = ".5"; 
 
-        startCountdown(countdownDuration6, proceedToNextStep); // Last step, no next step callback
+        startCountdown(countdownDuration7, proceedToNextStep); // Last step, no next step callback
         currentStep = 7;
     } else if (currentStep === 7) {
 
@@ -239,7 +244,7 @@ function proceedToNextStep() {
             step9.style.fontSize = "1.2rem";
             step9.style.opacity = ".5"; 
             
-        startCountdown(countdownDuration7, proceedToNextStep); // Last step, no next step callback
+        startCountdown(countdownDuration8, proceedToNextStep); // Last step, no next step callback
         currentStep = 8;
     } else if (currentStep === 8) {
 
@@ -260,7 +265,7 @@ function proceedToNextStep() {
             step10.style.fontSize = "1.2rem";
             step10.style.opacity = ".5"; 
             
-        startCountdown(countdownDuration8, proceedToNextStep); // Last step, no next step callback
+        startCountdown(countdownDuration9, proceedToNextStep); // Last step, no next step callback
         currentStep = 9;
     } else if (currentStep === 9) {
 
@@ -281,7 +286,7 @@ function proceedToNextStep() {
             step11.style.fontSize = "1.2rem";
             step11.style.opacity = ".5"; 
             
-        startCountdown(countdownDuration9, proceedToNextStep); // Last step, no next step callback
+        startCountdown(countdownDuration10, proceedToNextStep); // Last step, no next step callback
         currentStep = 10;
     } else if (currentStep === 10) {
 
@@ -302,7 +307,7 @@ function proceedToNextStep() {
             step12.style.fontSize = "1.2rem";
             step12.style.opacity = ".5"; 
             
-        startCountdown(countdownDuration10, proceedToNextStep); // Last step, no next step callback
+        startCountdown(countdownDuration11, proceedToNextStep); // Last step, no next step callback
         currentStep = 11;
     } else if (currentStep === 11) {
 
@@ -323,20 +328,22 @@ function proceedToNextStep() {
             step13.style.fontSize = "1.2rem";
             step13.style.opacity = ".5"; 
             
-        startCountdown(countdownDuration11, proceedToNextStep); // Last step, no next step callback
+        startCountdown(countdownDuration12, proceedToNextStep); // Last step, no next step callback
         currentStep = 12;
     } else if (currentStep === 12) {
 
             // change the look and position of instructions
             containerInstructions.style.transition = "transform 0.7s ease";
             containerInstructions.style.transform = "translateY(-398px)";
+
+            display.textContent = "Done";
            
             //Step 11
             step11.style.fontSize = "0.4rem";
             step11.style.opacity = "0";
             // Step 12
             step12.style.fontSize = "1.2rem";
-            step12.style.opacity = ".5";
+            step12.style.opacity = "0";
             // Step 13
             step13.style.fontSize = "2rem";
             step13.style.opacity = "1";
@@ -348,30 +355,5 @@ function proceedToNextStep() {
     
 }
 
-
-
-
-
-
-
-
-
-// // Attach the click event to pause the countdown
-// pauseBtn.onclick = function() {
-//     clearInterval(timerInterval); // Stop the countdown
-//     paused = true; // Set the pause state to true
-// };
-
-// // Reset button logic
-// resetBtn.onclick = function () {
-//     clearInterval(timerInterval); // Stop the countdown if it's running
-//     display.style.opacity = "0%";
-//     delay(1000);
-//     display.textContent = "3"; // Reset the display to the initial time
-//     step1.textContent = "Start the timer!"; // Reset the instructions
-//     step2.textContent = "Pour 50g of water to bloom";
-//     currentStep = 1; // Reset to step 1
-//     paused = false; // Reset pause state
-// };
 
 
