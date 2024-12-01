@@ -13,7 +13,7 @@ body {
     font-size: 4rem;
     margin: 25px;
     margin-top: 100px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     opacity: 30%;
     transition: 1s ease;
 }
@@ -39,8 +39,8 @@ body {
     position: relative; /* Ensure it doesn't overlap other elements */
     z-index: 1; /* Prevent stacking issues */
     border: none;
-    margin-top: 80px;
-    margin-bottom: 20px;
+    margin-top: 60px;
+    margin-bottom: 5px;
     padding: 20px 0;
     min-width: 365px;
     
@@ -105,6 +105,30 @@ p {
     opacity: 0%;
 }    
 
+#placeholder1 {
+    font-size: 0.4rem;
+    transition: 0.5s ease;
+    opacity: 0%;
+}
+
+#placeholder2 {
+    font-size: 1.2rem;
+    transition: 0.5s ease;
+    opacity: 0%;
+}
+
+#placeholder2 {
+    font-size: 1.2rem;
+    transition: 0.5s ease;
+    opacity: 0%;
+}
+
+#placeholder2 {
+    font-size: 0.4rem;
+    transition: 0.5s ease;
+    opacity: 0%;
+}
+
 
 
 
@@ -135,9 +159,6 @@ p {
 
 
 
-#temp {
-    transform: translateY(-176px) ;
-}
 
     
     
