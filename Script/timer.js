@@ -335,8 +335,6 @@ function proceedToNextStep() {
             // change the look and position of instructions
             containerInstructions.style.transition = "transform 0.7s ease";
             containerInstructions.style.transform = "translateY(-398px)";
-
-            display.textContent = "Done";
            
             //Step 11
             step11.style.fontSize = "0.4rem";
@@ -350,6 +348,7 @@ function proceedToNextStep() {
     
             
         startCountdown(null); // Last step, no next step callback
+        display.textContent = "Done";
         currentStep = 12;
     }
     
